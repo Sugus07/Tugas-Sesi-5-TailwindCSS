@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Sesi 5 TailwindCSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <style class="text/tailwindcss">
+        section,div {
+            border: 2px solid salmon;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container my-1 mx-auto">
+        <!-- header -->
+        <header>
+            <section class="min-w-full flex justify-center p-2 shadow-xl">
+                <div class="logo w-1/5 flex justify-center"><img class="w-8 h-8" src="img/Logo.png" alt="mang agus">
+                    <h1 class="ml-2 text-center font-bold flex justify-center">Mangkoding</h1>
+                        </div>
+                    <nav class="w-3/5">
+                        <div class="nav max-w-full">
+                            <ul class="max-w-full gap-5 flex justify-center items-center">
+                                <li><a class="hover:bg-blue-500 p-1 rounded-full" href="#">Home</a></li>
+                                <li><a class="hover:bg-blue-500 p-1 rounded-full" href="#">About</a></li>
+                                <li><a class="hover:bg-blue-500 p-1 rounded-full" href="#">Services</a></li>
+                                <li><a class="hover:bg-blue-500 p-1 rounded-full" href="#">OurWork</a></li>
+                                <li><a class="hover:bg-blue-500 p-1 rounded-full" href="#">Blog</a></li>
+                                <li><a class="hover:bg-blue-500 p-1 rounded-full" href="#">Resource</a></li>
+                                <li><a class="hover:bg-blue-500 p-1 rounded-full" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="primary flex items-center justify-center">
+                        <div class="search"><img class="w-7- h-7" src="./img/search-icon-transparent-images-vector-23.png" alt=""></div>
+                        <div class="button"><a class="bg-blue-500 rounded-full p-1 hover:bg-blue-700" href="#">Get Started</a></div>
+                    </div>
+            </section>
+            <section id="hero" class="flex flex-col gap-5">
+                <div class="max-w-[700px] mx-auto mt-[100px]">
+                    <h1 class="text-2xl lg:text-4xl xl:text-5xl text-center font-nunito font-bold">It's Fun To Build a Website With The <span class="text-gradient bg-gradient-to-r from-orange-500 via-pink-700 to-blue-500 bg-clip-text text-transparent">Mangkoding Team</span></h1>
+                    <p class="text-center py-5">
+                        The Mangcoding team will help build a website for your company with quality and guaranteed services, with custom templates you can create a website as you like.
+                    </p>
+                </div>
+                <div class="action mx-auto flex justify-center items-center gap-10">
+                    <a class="bg-blue-500 p-1 rounded-full hover:bg-blue-700" href="#get-started" class="button-primary">Get Started</a>
+                    <a href="#" class="underline flex items-center gap-5 hover:no-underline">Explore our blog ➜ <img src="./arrow-right.svg" alt=""></a>
+                </div>
+                <img src="./img/Design.png" alt="" class="mx-auto">
+            </section>
+        </header>
+        <!-- akhir header -->
+        <main>
+            <section class="brand w-3/4 mx-auto my-10">
+                <h2 class="text-center font-bold text-base">Brand That Trust Us</h2>
+                <section class="list mx-auto my-5">
+                    <ul class="flex gap-5 justify-center">
+                        <li><a href="#"><img src="img/image 1.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/image 2.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/image 3.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/image 4.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/Frame.png 5.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/image 5.png" alt=""></a></li>
+                    </ul>
+                </section>
+            </section>
+            <div class="container max-w-full py-14 bg-gradient-to-tr from-blue-50 via-red-50 to-yellow-50">
+                <section class="w-4/5 mx-auto flex p-5">
+                    <div class="services w-2/4 mx-auto">
+                        <h2 class="font-serif font-bold text-xl">Services</h2>
+                        <p class="font-thin text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci pariatur asperiores dolorum aspernatur ea dolore quam sapiente modi!</p>
+                    </div>
+                    <div class="build w-2/4 flex justify-end box-border items-center">
+                        <a href="#" class="p-2 bg-blue-500 box-border rounded-full">Build Website</a>
+                    </div>
+                </section>
+                <section class="w-4/5 mx-auto p-5 grid grid-cols-3 gap-2">
+                    <div class="card-1 p-5 shadow-xl bg-white">
+                        <header class="w-full h-24 mt-10">
+                            <img src="img/Shopify logo.png" class="w-1/2 h-10 flex justify-center mx-auto py" alt="">
+                        </header>
+                        <section>
+                            <h2 class="font-serif text-base text-center font-bold">Shopify Theme Development</h2>
+                            <p class="font-thin text-sm text-center">Start From 700 USD For Project Base or 35 USD per hour</p>
+                        </section>
+                    </div>
+                    <div class="card-2 p-5 shadow-xl bg-white">
+                        <header class="w-full h-24 inline-block justify-center items-center mx-auto mt-10">
+                            <img src="img/PHP logo.png" class="w-20 mt-5 flex justify-center mx-auto py" alt="">
+                        </header>
+                        <section>
+                            <h2 class="font-serif text-base text-center font-bold">Web Application Development</h2>
+                            <p class="font-thin text-sm text-center">Start From 1000 USD For Project Base or 35 USD per hour</p>
+                        </section>
+                    </div>
+                    <div class="card-3 row-span-2 p-5 shadow-xl bg-white">
+                        <section class="asistan w-full">
+                            <header class="w-full">
+                                <div class="logo flex justify-center items-center mt-8">
+                                    <img src="img/logo asistans.png" alt="">
+                                </div>
+                                <section class="w-full mt-3">
+                                    <h2 class="w-full font-bold text-center">Assistans Service</h2>
+                                    <p class="text-center font-thin">Start From 33 USD for project base or 35 USD per hour</p>
+                                </section>
+                            </header>
+                            <section class="mt-24">
+                                <h2 class="text-center font-thin">More Service :</h2>
+                                <section class="flex justify-center mt-5">
+                                    <ul>
+                                        <li><a href="#" class="font-bold">Technical Assistan</a></li>
+                                        <li><a href="#" class="font-bold">Support Assistans</a></li>
+                                        <li><a href="#" class="font-bold">VIP Assistan</a></li>
+                                        <li><a href="#" class="font-bold">Sosial Media Admin</a></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="card-4 p-5 shadow-xl bg-white">
+                        <header class="w-full h-24 mt-10">
+                            <img src="img/wordpress-lockup logo.png" class="w-1/2 h-10 flex justify-center mx-auto bg-white" alt="">
+                        </header>
+                        <section>
+                            <h2 class="font-serif text-base text-center font-bold">WordPress Theme Development</h2>
+                            <p class="font-thin text-sm text-center">Start From 600 USD For Project Base or 35 USD per hour</p>
+                        </section>
+                    </div>
+                    <div class="card-5 p-5 shadow-xl bg-white">
+                        <header class="w-full h-24 flex justify-center mt-10">
+                            <img src="img/logo-www.com.png" class="w-1/2 h-10 flex justify-center mx-auto bg-white" alt="">
+                        </header>
+                        <section>
+                            <h2 class="font-serif text-base text-center font-bold">Custom App/Plugins Development</h2>
+                            <p class="font-thin text-sm text-center">Start From 300 USD For Project Base or 35 USD per hour</p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <!-- end service -->
+            <!-- awal section -->
+            <div class="container max-w-full py-14">
+                <section class="w-4/5 mx-auto p-5">
+                    <header class="w-1/2 mx-auto">
+                        <h2 class="text-center font-bold text-2xl mb-2">What we do</h2>
+                        <p class="font-thin text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto excepturi exercitationem veniam doloremque, necessitatibus pariatur ea asperiores! Voluptatibus, laboriosam porro.</p>
+                    </header>
+                    <section class="grid grid-cols-4 gap-10">
+                        <div class="design">
+                            <section class="p-5">
+                                <header>
+                                    <img src="img/design-list.png" class="flex justify-center items-center mx-auto shadow-xl rounded-full" alt="">
+                                </header>
+                                <section class="mt-3">
+                                    <h2 class="font-bold text-center mb-2">Design</h2>
+                                    <p class="font-thin text-center">Create Wireframe Display Design And Initial UI Design For Websites</p>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="front-end">
+                            <section class="p-5">
+                                <header>
+                                    <img src="img/front-end.png" class="flex justify-center items-center mx-auto shadow-xl rounded-full" alt="">
+                                </header>
+                                <section class="mt-3">
+                                    <h2 class="font-bold text-center mb-2">Front End</h2>
+                                    <p class="font-thin text-center">Create Wireframe Display Design And Initial UI Design For Websites</p>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="back-end">
+                            <section class="p-5">
+                                <header>
+                                    <img src="img/back-end.png" class="flex justify-center items-center mx-auto shadow-xl rounded-full" alt="">
+                                </header>
+                                <section class="mt-3">
+                                    <h2 class="font-bold text-center mb-2">Back End</h2>
+                                    <p class="font-thin text-center">Create Wireframe Display Design And Initial UI Design For Websites</p>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="check-test">
+                            <section class="p-5">
+                                <header>
+                                    <img src="img/check-test.png" class="flex justify-center items-center mx-auto shadow-xl rounded-full" alt="">
+                                </header>
+                                <section class="mt-3">
+                                    <h2 class="font-bold text-center mb-2">Check Test</h2>
+                                    <p class="font-thin text-center">Create Wireframe Display Design And Initial UI Design For Websites</p>
+                                </section>
+                            </section>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <!-- akhir -->
+            <!-- awal Ourwork-->
+            <div class="container my-5">
+                <header>
+                    <h2 class="font-bold text-center text-2xl my-5">Our Work</h2>
+                    <p class="font-thin text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dicta?</p>
+                </header>
+                <section class="w-4/5 mx-auto p-5">
+                    <section class="grid grid-cols-2">
+                        <div class="orely col-span-2 shadow-xl p-5">
+                            <section class="w-full flex">
+                                <section class="w-1/2">
+                                    <header class="flex">
+                                        <img src="img/header-orely.png" alt="">
+                                    </header>
+                                    <section>
+                                        <h2 class="font-bold text-2xl mt-8">Retainer Orely Studi</h2>
+                                        <p class="font-thin mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, iusto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum blanditiis nam rem totam velit eligendi.</p>
+                                    </section>
+                                    <section class="mt-10">
+                                        <ul class="flex ml-5">
+                                            <li><a class="p-1 bg-cyan-400 rounded-full mr-5 hover:bg-blue-700" href="#">Read more</a></li>
+                                            <li><a href="#" class="underline hover:no-underline">Link Website ➝</a></li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <section class="w-1/2 shadow-xl">
+                                    <section>
+                                        <img src="img/logo-orely.png" class="w-full" alt="">
+                                    </section>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="federasi gap mt-5 shadow-xl">
+                            <section class="w-full p-5">
+                                <header class="w-full">
+                                    <img src="img/header-federasi.png" alt="">
+                                </header>
+                                <section class="w-full my-5">
+                                    <h2 class="font-bold text-2xl">Federasi Ice Skating Indonesia</h2>
+                                    <p class="my-5 font-thin">Rentainer Orely Studio is a Website From the Orely Company that we Developed into code</p>
+                                </section>
+                                <section class="list">
+                                    <ul class="flex ml-5">
+                                        <li><a href="#" class="mr-5 p-1 bg-cyan-400 rounded-full hover:bg-blue-700">Read More</a>
+                                        </li>
+                                        <li><a href="#" class="underline hover:no-underline">Link Website ➝</a></li>
+                                    </ul>
+                                </section>
+                                <section class="hero w-full mt-10">
+                                    <img src="img/ice-skating.png" alt="">
+                                </section>
+                            </section>
+                        </div>
+                        <div class="bea-cukai mt-5 shadow-xl">
+                            <section class="w-full p-5">
+                                <header class="w-full">
+                                    <img src="img/logo-beacukai.png" alt="">
+                                </header>
+                                <section class="w-full my-5">
+                                    <h2 class="font-bold text-2xl">Bea Cukai Saggata</h2>
+                                    <p class="my-5 font-thin">Rentainer Orely Studio is a Website From the Orely Company that we Developed into code</p>
+                                </section>
+                                <section class="list">
+                                    <ul class="flex ml-5">
+                                        <li><a href="#" class="mr-5 p-1 bg-cyan-400 rounded-full hover:bg-blue-700">Read More</a>
+                                        </li>
+                                        <li><a href="#" class="underline hover:no-underline">Link Website ➝</a></li>
+                                    </ul>
+                                </section>
+                                <section class="hero w-full mt-10">
+                                    <img src="img/logo-bea.png" alt="">
+                                </section>
+                            </section>
+                        </div>
+                    </section>
+                </section>
+                <section class="w-4/5 mx-auto bg-white">
+                    <section class="our-work flex justify-center items-center">
+                        <a href="#" class="p-2 bg-cyan-400 rounded-full hover:bg-blue-700">Our Work</a>
+                    </section>
+                </section>
+                <div class="container mt-5 p-10 box-border bg-gradient-to-tr from-blue-50 via-yellow-50 to-green-50">
+                    <section class="w-4/5 mx-auto flex p-5">
+                        <section class="w-2/5">
+                            <header class="w-full">
+                                <h2 class=" font-bold text-xl bg-gradient-to-r from-blue-500 via-pink-500 to-orange-700 bg-clip-text text-transparent">What Do People Say About</h2>
+                                <span class="font-bold text-lg">The Mangkoding Team</span>
+                            </header>
+                            <section class="managing mt-5 flex box-border w-4/5 shadow-2xl rounded-xl p-2 bg-white">
+                                <section class="image mr-5">
+                                    <img src="img/agus.jpg" class="w-16 h-16 rounded-full" alt="">
+                                </section>
+                                <section class="description mt-2">
+                                    <h2 class="font-bold">MUHAMMAD AGUS</h2>
+                                    <span class="font-thin">Managing Director Orely.co</span>
+                                </section>
+                            </section>
+                            <section class="managing-2 mt-7 flex box-border w-4/5 rounded-xl p-2">
+                                <section class="image mr-5">
+                                    <img src="img/ME.jpg" class="w-16 h-16 rounded-full" alt="">
+                                </section>
+                                <section class="description mt-2">
+                                    <h2 class="font-bold">MUHAMMAD AGUS</h2>
+                                    <span class="font-thin">Mahasiswa Nusa Putra</span>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="w-3/5">
+                            <section class="w-3/4 my-24">
+                                <span>
+                                    <img src="img/kutip kiri.png" alt="">
+                                </span>
+                                <section>
+                                    <span class="font-bold">It was a great experience to work with Mangkoding, we love the detail result, adn profesionalism</span>
+                                </section>
+                                <span class="w-full">
+                                    <img src="img/kutip kanan.png" class="float-right" alt="">
+                                </span>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <div class="container w-full my-5">
+                    <section class="our-blog w-4/5 mx-auto">
+                        <header class="w-full text-center font-bold text-2xl my-10">Our Blog</header>
+                        <section class="grid grid-cols-3 gap-5">
+                            <div class="card-1 rounded-xl overflow-hidden">
+                                <header>
+                                    <img src="img/blog-1.png" alt="">
+                                </header>
+                                <section class="my-2 p-2">
+                                    <section>
+                                        <span>
+                                            <h2 class="font-bold text-sm">8 alasan pentingnya melakukan percadangan situs web</h2>
+                                        </span>
+                                        <span class="my-3 font-thin text-xs">Oktober 28,2022</span>
+                                    </section>
+                                    <section class="my-3">
+                                        <p class="font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, optio!</p>
+                                    </section>
+                                </section>
+                            </div>
+                            <div class="card-2 rounded-xl overflow-hidden">
+                                <header>
+                                    <img src="img/blog-2.png" alt="">
+                                </header>
+                                <section class="my-2 p-2">
+                                    <section>
+                                        <span>
+                                            <h2 class="font-bold text-sm">8 alasan pentingnya melakukan percadangan situs web</h2>
+                                        </span>
+                                        <span class="my-3 font-thin text-xs">Oktober 28,2022</span>
+                                    </section>
+                                    <section class="my-3">
+                                        <p class="font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, optio!</p>
+                                    </section>
+                                </section>
+                            </div>
+                            <div class="card-3 rounded-xl overflow-hidden">
+                                <header>
+                                    <img src="img/blog-3.png" alt="">
+                                </header>
+                                <section class="my-2 p-2">
+                                    <section>
+                                        <span>
+                                            <h2 class="font-bold text-sm">8 alasan pentingnya melakukan percadangan situs web</h2>
+                                        </span>
+                                        <span class="my-3 font-thin text-xs">Oktober 28,2022</span>
+                                    </section>
+                                    <section class="my-3">
+                                        <p class="font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, optio!</p>
+                                    </section>
+                                </section>
+                            </div>
+                        </section>
+                        <section class="our-work flex justify-center items-center my-5">
+                            <a href="#" class="p-2 bg-cyan-400 rounded-full hover:bg-blue-700">Our Work</a>
+                        </section>
+                    </section>
+                </div>
+                <div class="container bg-gradient-to-r from-blue-100 via-pink-100 to-red-100">
+                    <section class="w-4/5 mx-auto flex justify-center p-14">
+                        <div class="w-3/5">
+                            <section>
+                                <h2 class="font-bold text-2xl">Let's build a website with Mangkoding</h2>
+                                <span class="font-thin mt-5">Mangkoding team will help you in branding your product</span>
+                            </section>
+                        </div>
+                        <div class="w-2/5">
+                            <section class="flex justify-end my-auto">
+                                <a href="#" class="p-2 rounded-full bg-cyan-300 hover:bg-blue-700">Build Website Now</a>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <div class="container bg-sugus text-white p-10">
+                    <section class="w-4/5 mx-auto flex justify-center gap-2">
+                        <div class="card-1 w-25%">
+                            <header class="flex">
+                                <img src="img/Logo.png" class="mr-2" alt="">
+                                <h2 class="font-bold mt-2">Mangkoding</h2>
+                            </header>
+                            <section class="mt-5">
+                                <span>Mangkoding Team Will Help You  In Branding Your Product. 
+                                    With Mangkoding Your Website Will Be Fast</span>
+                            </section>
+                            <section class="acount my-6">
+                                <ul class="flex justify-evenly">
+                                    <li><a href="#"></a><img src="img/logo-ig.png" class="w-8" alt=""></li>
+                                    <li><a href="#"></a><img src="img/logo-github.png" class="w-8" alt=""></li>
+                                    <li><a href="#"></a><img src="img/logo-yt.png" class="w-8" alt=""></li>
+                                    <li><a href="#"></a><img src="img/logo-in.png" class="w-8" alt=""></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="card-2 w-15%">
+                            <header>
+                                <h2 class="text-center font-bold mb-5">Mangkoding</h2>
+                            </header>
+                            <section class="flex justify-center mt-5">
+                                <ul>
+                                    <li class="m-2"><a href="#">Home</a></li>
+                                    <li class="m-2"><a href="#">About</a></li>
+                                    <li class="m-2"><a href="#">Services</a></li>
+                                    <li class="m-2"><a href="#">Blog</a></li>
+                                    <li class="m-2"><a href="#">Work</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="card-3 w-30%">
+                            <header class="w-full">
+                                <h2 class="font-bold">Services</h2>
+                            </header>
+                            <section class="flex justify-center mt-5">
+                                <ul>
+                                    <li class="m-2"><a href="#">Custom WordPress Theme Development</a></li>
+                                    <li class="m-2"><a href="#">Custom Plugin WordPress</a></li>
+                                    <li class="m-2"><a href="#">Custom Shopify Theme Development</a></li>
+                                    <li class="m-2"><a href="#">Custom App For Shopify</a></li>
+                                    <li class="m-2"><a href="#">Web Application</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="card-4 w-30%">
+                            <section>
+                                <header class="font-bold">Services</header>
+                                <section class="flex mt-5">
+                                        <span class="w-10%">
+                                            <img src="img/logo-email.png" class="w-6 mr-4" alt="">
+                                        </span>
+                                        <span class="w-90%">hello@mangkoding.com</span>
+                                        <!-- <div class="clear clear-both"></div> -->
+                                </section>
+                                <section class="flex">
+                                    <span class="w-10%">
+                                        <img src="img/logo-telpon.png" class="w-6 mr-4" alt="">
+                                    </span>
+                                    <span class="w-90%">0266-6532078 <br>WA :0857-5940-2332</span>
+                                    <!-- <div class="clear clear-both"></div> -->
+                            </section>
+                            <section class="flex">
+                                <span class="w-10%">
+                                    <img src="img/logo-lokasi.png" class="w-6 mr-4" alt="">
+                                </span>
+                                <span class="w-90%">PT Anugrah Kreasi Digital. Karang tengah, Cibadak-Sukabumi</span>
+                                <!-- <div class="clear clear-both"></div> -->
+                        </section>
+                            </section>
+                            <section class="mt-10">
+                                <header class="w-full">
+                                    <h1 class="font-bold">Trusted partner</h1>
+                                </header>
+                                <section class="mt-5">
+                                    <ul class="flex gap-7">
+                                        <li><a href="#"><img src="img/orely.png" class="w-20" alt=""></a></li>
+                                        <li><a href="#"><img src="img/kiwa.png" class="w-20" alt=""></a></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                <footer class="bg-sugus p-5 text-white">
+                    <section class="w-full">
+                        <h2 class="text-center">©2022 MUHAMMAD AGUS. ALL rights reserved</h2>
+                    </section>
+                </footer>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
