@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors : {
         'sugus' :'#125960',
+        'gus' : '#0EC5D7'
       },
       width : {
         '30%' : '30%',
